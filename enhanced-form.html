@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sam Tech World</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.8;
+      margin: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header, section, footer {
+      margin-bottom: 30px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 10px;
+    }
+    table, th, td {
+      border: 1px solid #aaa;
+      padding: 9px;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 17px;
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      margin: 9px 0 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Tech World</h1>
+    <p>Welcome to the best tech world</p>
+  </header>
+
+  <section>
+    <h2>Skills acquired</h2>
+    <ol>
+      <li>Computer hardware</li>
+      <li>Computer Software</li>
+      <li>Networking Troubleshooting</li>
+      <li>Printer Troubleshooting</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Schools Attended</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>School Name </th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Computer Hardware</td>
+          <td>Scibono</td>
+          <td>2019</td>
+        </tr>
+        <tr>
+          <td>Computer Software</td>
+          <td>Icollege</td>
+          <td>2014</td>
+        </tr>
+        <tr>
+          <td>Network Troubleshooting</td>
+          <td>UNISA</td>
+          <td>2020</td>
+        </tr>
+        <tr>
+          <td>Printer Troubleshooting</td>
+          <td>UNISA</td>
+          <td>2021</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Media Showcase</h2>
+    <figure>
+      <img src="https://www.chill.us/sites/default/files/2018/11/29/black-tech-primaryx750.jpg" alt="Man in Tech" width="100%" />
+      <figcaption>: Man in Tech</figcaption>
+    </figure>
+    <audio controls>
+      <source src="AKA - Mbuzi (Freestyle) (Official Audio) ft. Thato Saul.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="POST" autocomplete="on">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name *</label>
+        <input type="text" id="fullname" name="fullname" required placeholder="John Doe" minlength="3" />
+
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="example@mail.com" />
+
+        <label for="dob">Date of Birth *</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="gender">Gender *</label>
+        <select id="gender" name="gender" required>
+          <option value="">-- Select Gender --</option>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+
+        <label for="username">Username *</label>
+        <input type="text" id="username" name="username" required minlength="5" pattern="^[a-zA-Z0-9_]+$" placeholder="e.g., johndoe_123" />
+
+        <label for="password">Password *</label>
+        <input type="password" id="password" name="password" required minlength="6" placeholder="Minimum 6 characters" />
+
+        <label for="confirm-password">Confirm Password *</label>
+        <input type="password" id="confirm-password" name="confirm-password" required minlength="6" />
+
+        <label for="user-id">User ID (Read-only)</label>
+        <input type="text" id="user-id" name="user-id" value="USR-001" readonly />
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="bio">Short Bio</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about yourself..."></textarea>
+
+        <label>Subscribe to newsletter</label>
+        <input type="checkbox" id="newsletter" name="newsletter" checked />
+        <label for="newsletter">Yes, keep me updated!</label>
+      </fieldset>
+
+      <input type="submit" value="Register" />
+      <input type="reset" value="Reset Form" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 My Tech Web Page. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
